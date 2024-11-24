@@ -1177,16 +1177,16 @@ Values:
     border: 1px solid #fefefe;
   }
 `;function jle(){const{sender:e,connected:t}=YO(),[r,n]=mr.useState("20.00"),[o,i]=mr.useState("UQD2FCKUxiVNwKesp9vGkpOzeaC0jCxw-gQiA9LwtziPCB7p");return En(qle,{children:Bf(l$,{children:[En("h3",{children:"Transfer TON"}),Bf(m4,{children:[En("label",{children:"Amount "}),En(AS,{style:{marginRight:8},type:"number",value:r,onChange:f=>n(f.target.value)})]}),Bf(m4,{children:[En("label",{children:"To "}),En(AS,{style:{marginRight:8},value:o,onChange:f=>i(f.target.value)})]}),En(f$,{disabled:!t,style:{marginTop:18},onClick:async()=>{e.send({to:Z3.Address.parse(o),value:Z3.toNano(r)})},children:"Transfer"})]})})}const Fle=Xo.div`
-  background-color: #e8e8e8;
+  background-color: #222;
   color: black;
 
   @media (prefers-color-scheme: dark) {
-    background-color: #222;
-    color: white;
+    background-color: #e8e8e8;
+    color: black;
   }
   min-height: 100vh;
   padding: 20px 20px;
 `,zle=Xo.div`
   max-width: 900px;
   margin: 0 auto;
-`;function Wle(){const{network:e}=YO();return En(Fle,{children:En(zle,{children:Bf(l$,{children:[En(m4,{children:Bf(f$,{children:[e?e===vc.MAINNET?"TRANSFER OWNERSHIP":"testnet":"REAL",En(kV,{})]})}),En(jle,{})]})})})}const Hle="https://raw.githubusercontent.com/ton-community/tutorials/main/03-client/test/public/tonconnect-manifest.json",Kle=new J$({defaultOptions:{queries:{refetchOnWindowFocus:!1}}});V3.createRoot(document.getElementById("root")).render(En(CV,{manifestUrl:Hle,children:En(aN,{client:Kle,children:En(Wle,{})})}));
+`;function Wle(){const{network:e}=YO();return En(Fle,{children:En(zle,{children:Bf(l$,{children:[Bf(m4,{children:[En(kV,{}),En(f$,{children:e?e===vc.MAINNET?"TRANSFER OWNERSHIP":"testnet":"REALSHAHNAMEH"})]}),En(jle,{})]})})})}const Hle="https://raw.githubusercontent.com/ton-community/tutorials/main/03-client/test/public/tonconnect-manifest.json",Kle=new J$({defaultOptions:{queries:{refetchOnWindowFocus:!1}}});V3.createRoot(document.getElementById("root")).render(En(CV,{manifestUrl:Hle,children:En(aN,{client:Kle,children:En(Wle,{})})}));

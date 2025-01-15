@@ -1185,7 +1185,7 @@ Values:
   @media (prefers-color-scheme: dark) {
     border: 1px solid #fefefe;
   }
-`;function vce(){const{connected:e}=d0(),{mint:t,jettonWalletAddress:r,balance:n}=cfe();return Pr(G$,{title:"Jetton",children:bo(p8,{children:[Pr("h3",{children:"RealShahnameh (REAL)"}),bo(Vc,{children:["Wallet",Pr(pce,{children:r})]}),bo(Vc,{children:["Call",Pr("div",{children:n??"EQDhq_DjQUMJqfXLP8K8J6SlOvon08XQQK0T49xon2e0xU8p"})]}),Pr(v8,{disabled:!e,onClick:async()=>{t()},children:""})]})})}function gce(){const{sender:e,connected:t}=d0(),[r,n]=zt.useState("70.00"),[o,i]=zt.useState("UQBVGDgsP5syK1iz4D8YTFDDyERINYvYczOaD8WR5wCCpURW");return Pr(G$,{children:bo(p8,{children:[Pr("h3",{children:"Get_liquidity"}),bo(Vc,{children:[Pr("label",{children:"Amount "}),Pr(eC,{style:{marginRight:8},type:"number",value:r,onChange:f=>n(f.target.value)})]}),bo(Vc,{children:[Pr("label",{children:"To "}),Pr(eC,{style:{marginRight:8},value:o,onChange:f=>i(f.target.value)})]}),Pr(v8,{disabled:!t,style:{marginTop:18},onClick:async()=>{e.send({to:Uc.Address.parse(o),value:Uc.toNano(r)})},children:"Call"})]})})}const mce=as.div`
+`;function vce(){const{connected:e}=d0(),{mint:t,jettonWalletAddress:r,balance:n}=cfe();return Pr(G$,{title:"Jetton",children:bo(p8,{children:[Pr("h3",{children:"Ton Contract (Verifier)"}),bo(Vc,{children:["Wallet",Pr(pce,{children:r})]}),bo(Vc,{children:["Call",Pr("div",{children:n??"EQDhq_DjQUMJqfXLP8K8J6SlOvon08XQQK0T49xon2e0xU8p"})]}),Pr(v8,{disabled:!e,onClick:async()=>{t()},children:""})]})})}function gce(){const{sender:e,connected:t}=d0(),[r,n]=zt.useState("70.00"),[o,i]=zt.useState("UQBVGDgsP5syK1iz4D8YTFDDyERINYvYczOaD8WR5wCCpURW");return Pr(G$,{children:bo(p8,{children:[Pr("h3",{children:"Get_liquidity"}),bo(Vc,{children:[Pr("label",{children:"Amount "}),Pr(eC,{style:{marginRight:8},type:"number",value:r,onChange:f=>n(f.target.value)})]}),bo(Vc,{children:[Pr("label",{children:"To "}),Pr(eC,{style:{marginRight:8},value:o,onChange:f=>i(f.target.value)})]}),Pr(v8,{disabled:!t,style:{marginTop:18},onClick:async()=>{e.send({to:Uc.Address.parse(o),value:Uc.toNano(r)})},children:"Call"})]})})}const mce=as.div`
   background-color: #222;
   color: black;
 
@@ -1198,4 +1198,12 @@ Values:
 `,yce=as.div`
   max-width: 900px;
   margin: 0 auto;
-`;function bce(){const{network:e}=d0();return Pr(mce,{children:Pr(yce,{children:bo(p8,{children:[bo(Vc,{children:[Pr(UZ,{}),Pr(v8,{children:e?e===hl.MAINNET?"CONTRACT CALL":"testnet":"REALSHAHNAMEH"})]}),Pr(gce,{}),Pr(vce,{})]})})})}const wce="https://raw.githubusercontent.com/ton-community/tutorials/main/03-client/test/public/tonconnect-manifest.json",xce=new OU({defaultOptions:{queries:{refetchOnWindowFocus:!1}}});v4.createRoot(document.getElementById("root")).render(Pr(PZ,{manifestUrl:wce,children:Pr(XN,{client:xce,children:Pr(bce,{})})}));
+`;function bce(){const{network:e}=d0();return Pr(mce,{children:Pr(yce,{children:bo(p8,{children:[bo(Vc,{children:[Pr(UZ,{}),Pr(v8,{children:e?e===hl.MAINNET?"CONTRACT CALL":"testnet":"<a href="https://dyor.io/dapps/development/ContractVerifier?utm_source=dapp-badge" target="_blank">	
+  <img 
+    alt="TON Contract Verifier Badge"
+    height="46"
+    width="auto"
+    loading="lazy"
+    src="https://dyor.io/client/api/dapp/rank/ContractVerifier?theme=colored"
+  />
+</a>"})]}),Pr(gce,{}),Pr(vce,{})]})})})}const wce="https://raw.githubusercontent.com/ton-community/tutorials/main/03-client/test/public/tonconnect-manifest.json",xce=new OU({defaultOptions:{queries:{refetchOnWindowFocus:!1}}});v4.createRoot(document.getElementById("root")).render(Pr(PZ,{manifestUrl:wce,children:Pr(XN,{client:xce,children:Pr(bce,{})})}));

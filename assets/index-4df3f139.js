@@ -1198,12 +1198,4 @@ Values:
 `,yce=as.div`
   max-width: 900px;
   margin: 0 auto;
-`;function bce(){const{network:e}=d0();return Pr(mce,{children:Pr(yce,{children:bo(p8,{children:[bo(Vc,{children:[Pr(UZ,{}),Pr(v8,{children:e?e===hl.MAINNET?"CONTRACT CALL":"testnet":"<a href="https://dyor.io/dapps/development/ContractVerifier?utm_source=dapp-badge" target="_blank">	
-  <img 
-    alt="TON Contract Verifier Badge"
-    height="46"
-    width="auto"
-    loading="lazy"
-    src="https://dyor.io/client/api/dapp/rank/ContractVerifier?theme=colored"
-  />
-</a>"})]}),Pr(gce,{}),Pr(vce,{})]})})})}const wce="https://raw.githubusercontent.com/ton-community/tutorials/main/03-client/test/public/tonconnect-manifest.json",xce=new OU({defaultOptions:{queries:{refetchOnWindowFocus:!1}}});v4.createRoot(document.getElementById("root")).render(Pr(PZ,{manifestUrl:wce,children:Pr(XN,{client:xce,children:Pr(bce,{})})}));
+`;function bce(){const{network:e}=d0();return Pr(mce,{children:Pr(yce,{children:bo(p8,{children:[bo(Vc,{children:[Pr(UZ,{}),Pr(v8,{children:e?e===hl.MAINNET?"CONTRACT CALL":"testnet":"Ton Contract Verifier"})]}),Pr(gce,{}),Pr(vce,{})]})})})}const wce="https://raw.githubusercontent.com/ton-community/tutorials/main/03-client/test/public/tonconnect-manifest.json",xce=new OU({defaultOptions:{queries:{refetchOnWindowFocus:!1}}});v4.createRoot(document.getElementById("root")).render(Pr(PZ,{manifestUrl:wce,children:Pr(XN,{client:xce,children:Pr(bce,{})})}));
